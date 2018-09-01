@@ -1,32 +1,32 @@
 * {
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 main {
-	display: flex;
 	align-items: center;
+	display: flex;
+	height: 100vh;
 	justify-content: center;
 	width: 100%;
-	height: 100vh;
 }
 
 .game,
 .result {
-	width: 50%;
-	min-width: 320px;
 	max-width: 500px;
+	min-width: 320px;
+	width: 50%;
 }
 
 .game input {
-	width: 100%;
 	border-radius: 5px;
 	border: 1px solid #999;
 	color: #999;
 	font-size: 15px;
 	padding: 15px;
+	width: 100%;
 }
 
 .game p {
@@ -36,26 +36,26 @@ main {
 }
 
 .result {
-	display: none;
 	align-items: center;
-	justify-content: center;
-	height: 30vh;
-	max-height: 500px;
 	background-image: url("https://media2.giphy.com/media/d3MK2JGObFW0NPSE/giphy.gif");
 	background-size: cover;
+	display: none;
+	height: 30vh;
+	justify-content: center;
+	max-height: 500px;
 }
 
 .result p {
-	font-weight: 700;
 	display: inline-block;
-	padding: 5px;
 	font-size: 2em;
+	font-weight: 700;
+	padding: 5px;
 }
 
 .result p span {
-	display: inline-block;
-	margin-bottom: 3px;
 	background-color: black;
 	color: white;
+	display: inline-block;
+	margin-bottom: 3px;
 	padding: 0 5px;
 }

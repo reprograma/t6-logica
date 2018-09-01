@@ -20,7 +20,7 @@ const input = document.querySelector(".game input")
 // foram necessarias ate acertar.
 let tries = 0
 
-// Então vamos escutar por eventos
+// Vamos escutar por eventos
 // de submissão nesse <form>. Toda vez
 // que o usuário clicar "Enter" dentro do
 // input, esse evento é disparado.
@@ -30,7 +30,7 @@ form.addEventListener("submit", (event) => {
 	// submit esse comportamento inclui a
 	// página ser recarregada, portanto, vamos
 	// pedir para browser não aplicar esse 
-	// o padrão para o nosso elemento <form>.
+	// o padrão para o nosso elemento.
 	event.preventDefault()
 
 	// A primeira coisa que vou fazer é incrementar
@@ -86,7 +86,7 @@ form.addEventListener("submit", (event) => {
 
 	 	// O paragrafo esta com opacidade 0,
 	 	// vamos subir essa opacidade para 1.
-	 	// Fazemos isso para dar um efeito interessate.
+	 	// Fazemos isso para dar um efeito interessante.
 	 	hint.style.opacity = 1
 
 	 	// Depois de um segundo voltamos a opacidade pra zero,
