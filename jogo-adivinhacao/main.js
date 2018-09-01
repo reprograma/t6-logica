@@ -69,6 +69,15 @@ form.addEventListener("submit", (event) => {
 
 	 	// Agora vamos colocar texto dentro desse parágrafo.
 	 	hint.innerHTML = "Oops, o número correto é maior do que isso..."
+
+	 	// O paragrafo esta com opacidade 0,
+	 	// vamos subir essa opacidade para 1.
+	 	// Fazemos isso para dar um efeito interessate.
+	 	hint.style.opacity = 1
+
+	 	// Depois de um segundo voltamos a opacidade pra zero,
+	 	// Assim a interface fica mais dinamica e responsiva.
+	 	setTimeout(() => hint.style.opacity = 0, 1000)
 	}
 
 	// 03. O usuário chutou um número maior do
@@ -83,5 +92,14 @@ form.addEventListener("submit", (event) => {
 
 	 	// Agora vamos colocar texto dentro desse parágrafo.
 	 	hint.innerHTML = "Oops, o número correto é menor do que isso..."
+
+	 	// O paragrafo esta com opacidade 0,
+	 	// vamos subir essa opacidade para 1.
+	 	// Fazemos isso para dar um efeito interessate.
+	 	hint.style.opacity = 1
+
+	 	// Depois de um segundo voltamos a opacidade pra zero,
+	 	// Assim a interface fica mais dinamica e responsiva.
+	 	setTimeout(() => hint.style.opacity = 0, 1000)
 	}
 })
