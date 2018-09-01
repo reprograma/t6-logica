@@ -14,6 +14,12 @@ const form = document.querySelector(".game")
 // Ele será útil mais tarde no programa.
 const input = document.querySelector(".game input")
 
+// Aqui inicio um contador de tentativas.
+// A cada submissao do <form> ele aumenta, 
+// no final do jogo aparece quantas tentativas
+// foram necessarias ate acertar.
+let tries = 0
+
 // Então vamos escutar por eventos
 // de submissão nesse <form>. Toda vez
 // que o usuário clicar "Enter" dentro do
@@ -26,6 +32,10 @@ form.addEventListener("submit", (event) => {
 	// pedir para browser não aplicar esse 
 	// o padrão para o nosso elemento <form>.
 	event.preventDefault()
+
+	// A primeira coisa que vou fazer é incrementar
+	// o contador de tentativas.
+	tries++
 
 	// Vamos acessar o valor que foi colocado
 	// dentro do input, para podermos checar se
@@ -40,7 +50,7 @@ form.addEventListener("submit", (event) => {
 	// esconder o formulário e mostrar a <div>
 	// com a classe .result e no parágrafo dentro
 	// dessa <div> nós queremos que apareça o 
-	// número correto.
+	// número correto e o número de tentativas.
 	if (guess == GOAL) {
 		// Primeiro, vamos esconder o <form>.
 		form.style.display = "none"
@@ -54,7 +64,11 @@ form.addEventListener("submit", (event) => {
 		// Então vamos mostrar a <div>.
 		result.style.display = "flex"
 		// E vamos colocar o número certo dentro do <p>.
-		result_holder.innerHTML = GOAL
+		result_holder.innerHTML = `
+			<span>${GOAL}</span>
+			<br>
+			<span>${tries} tentativas</span>
+		`
 	}
 
 	// 02. O usuário chutou um número menor do
