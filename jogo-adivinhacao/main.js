@@ -52,7 +52,7 @@ form.addEventListener("submit", (event) => {
 		const result_holder = document.querySelector(".result p")
 
 		// Então vamos mostrar a <div>.
-		result.style.display = "block"
+		result.style.display = "flex"
 		// E vamos colocar o número certo dentro do <p>.
 		result_holder.innerHTML = GOAL
 	}

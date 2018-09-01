@@ -20,15 +20,34 @@ main {
 	max-width: 500px;
 }
 
-.result {
-	display: none;
-}
-
 .game input {
 	width: 100%;
 	border-radius: 5px;
 	border: 1px solid #999;
 	color: #999;
-	font-size: 1.2em;
+	font-size: 15px;
 	padding: 15px;
+}
+
+.game p {
+	margin-top: 30px;
+}
+
+.result {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+	max-height: 500px;
+	background-image: url("https://media2.giphy.com/media/d3MK2JGObFW0NPSE/giphy.gif");
+	background-size: cover;
+}
+
+.result p {
+	font-weight: 700;
+	background-color: black;
+	color: white;
+	display: inline-block;
+	padding: 5px;
+	font-size: 2em;
 }
