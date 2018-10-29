@@ -1,4 +1,4 @@
-# Trangulo de Pascal
+# Triângulo de Pascal
 
 Cada número do triângulo de Pascal é igual à soma do número imediatamente acima e do antecessor do número de cima.
 
